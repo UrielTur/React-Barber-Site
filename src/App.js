@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {BrowserRouter, Routes, Route, NavLink} from "react-router-dom";
+import HomePage from "./HomePage";
+import HairProducts from "./HairProducts";
+import NotFoundPage from "./NotFoundPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+
+  state = {
+
+  }
+
+
+  render() {
+    return (
+
+      <div className="App">
+          {/*<a href={"/products"}> Go to products page </a>*/}
+          <BrowserRouter>
+              {/*<NavLink style={navLinkStile} to={"/home"}>Home</NavLink>*/}
+              {/*<NavLink to={"/"} ></NavLink>*/}
+              <NavLink to={"/products"} ></NavLink>
+
+
+
+              <Routes>
+                    <Route path={"/"}  element={<HomePage />}/>
+                    <Route path={"/products"}  element={<HairProducts />}/>
+                    {/*<Route path={"*"}  element={<NotFoundPage />}/>*/}
+
+              </Routes>
+          </BrowserRouter>
+
+      </div>
+    );
+  }
 }
 
 export default App;

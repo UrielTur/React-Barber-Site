@@ -1,0 +1,134 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.image-container {
+    margin-top: 20px;
+    width: 650px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover; /* להתאים את התמונה לגודל של הקונטיינר */
+    /*background-position: center; !* למרכז את התמונה *!*/
+}
+
+.image-1 {
+    background-image: url("Images/haircut-1.jpeg");
+    background-position: center;
+
+}
+
+.image-2 {
+    background-image: url("Images/haircut-2.jpeg");
+
+
+}
+
+.image-3 {
+    background-image: url("Images/haircut-3.jpeg");
+    /*background-position: right; !* למרכז את התמונה *!*/
+    background-size: contain; /* להתאים את התמונה לגודל של הקונטיינר */
+    background-repeat: no-repeat;
+    margin-left: 80px;
+
+
+}
+
+.image-4 {
+    background-image: url("Images/haircut-4.jpeg");
+    background-position: center;
+
+}
+
+.image-5 {
+    background-image: url("Images/haircut-5.jpeg");
+    background-position: center;
+
+}
+
+.image-6 {
+    background-image: url("Images/haircut-6.jpeg");
+    background-position: center;
+
+}
+
+.image-7 {
+    background-image: url("Images/haircut-7.jpeg");
+    background-position: center;
+
+}
+
+.prev-button, .next-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: -60px;
+}
+
+.next-button {
+    right: -60px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .image-container {
+        margin-top: 0px;
+        width: 85vw;
+        height: 60vh;
+    }
+
+    .prev-button, .next-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .prev-button {
+        left: -30px;
+    }
+
+    .next-button {
+        right: -30px;
+    }
+
+    .image-1{
+        background-position: center;
+
+    }
+
+    .image-2 {
+        background-position: right;
+
+    }
+
+    .image-3 {
+        display: none;
+
+    }
+
+}
+
+

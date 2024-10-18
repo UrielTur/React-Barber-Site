@@ -1,0 +1,182 @@
+.panel{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    z-index: 9998;
+}
+
+.logo {
+    background-image: url("Images/logo-barber.png");
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 30px;
+    width: 140px;
+    height: 120px;
+    cursor: pointer;
+
+}
+
+.gallery{
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    left: 550px;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+
+}
+
+.gallery:hover{
+    color: lightgray;
+}
+
+
+
+.contact{
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    left: 250px;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.contact:hover{
+    color: lightgray;
+}
+
+.products{
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    right: 125px;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.products:hover{
+    color: lightgray;
+}
+
+
+.instagram {
+    background-color: black;
+    border: none;
+    background-image: url("Images/instagramLogo.png");
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    top: 30px;
+    left: 110px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+
+}
+
+.instagram:hover {
+    width: 80px;
+    height: 80px;
+    border-color: white;
+}
+
+.whatsapp {
+    background-color: black;
+    border: none;
+    background-image: url("Images/whatsapp-logo.png");
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    top: 30px;
+    left: 50px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+
+}
+
+.whatsapp:hover {
+    width: 60px;
+    height: 60px;
+    border-color: white;
+}
+
+
+.products-list {
+    background-color: #eff0f5;
+    display: flex; /* שימוש ב-Flexbox */
+    flex-wrap: wrap; /* אם אין מקום, הכרטיסים יעברו לשורה הבאה */
+    justify-content: flex-start; /* מרווח בין הכרטיסים בצד שמאל */
+    padding-top: 140px; /* רווח מעל כדי שיהיה מתחת לפאנל */
+    margin-left: 20px; /* רווח בצד שמאל */
+}
+
+
+
+/*.products-list {*/
+/*    top: 100px;*/
+/*    margin-top: 100px;*/
+/*    padding-top: 200px; !* הוסף רווח נוסף מעל המוצרים *!*/
+/*}*/
+
+
+
+/* עיצוב למסכים קטנים כמו סמארטפונים */
+@media (max-width: 768px) {
+    .panel {
+        height: 100px; /* הקטנת הפאנל */
+    }
+
+    .logo {
+        width: 100px; /* הקטנת הלוגו */
+        height: 80px;
+    }
+
+    .gallery, .contact, .products {
+        width: 100%; /* תפריטים ברוחב מלא */
+        height: 40px; /* הקטנת גובה הכפתורים */
+        margin-top: 10px;
+        left: 0; /* מיקום מחדש */
+        right: 0;
+    }
+
+    .instagram, .whatsapp {
+        top: 10px; /* מיקום מחדש של האייקונים */
+        left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .products-list {
+        padding-top: 80px; /* התאמת מרווחים פנימיים */
+        margin-left: 10px;
+    }
+
+    .products-list .product-card {
+        width: 100%; /* רוחב מלא לכרטיסים */
+        margin-bottom: 20px; /* מרווח בין הכרטיסים */
+    }
+}
+
+
+
+
