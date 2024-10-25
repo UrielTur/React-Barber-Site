@@ -303,13 +303,15 @@
     border: none;
     background-image: url("Images/instagramLogo.png");
     position: relative;
+    display: flex;
     background-size: contain;
     background-repeat: no-repeat;
 
-    top: 10px;
-    right: 25px;
-    width: 80px;
-    height: 80px;
+    top: 20px;
+    /*right: 10px;*/
+    left: 30px;
+    width: 10vw;
+    height: 10vh;
     cursor: pointer;
 
 }
@@ -319,13 +321,14 @@
     border: none;
     background-image: url("Images/whatsapp-logo.png");
     position: relative;
+    display: flex;
     background-size: contain;
     background-repeat: no-repeat;
 
-    /*top: 10px;*/
-    right: 50px;
-    width: 60px;
-    height: 60px;
+    top: -50px;
+    right: 40px;
+    width: 10vw;
+    height: 10vh;
     cursor: pointer;
 
 }
@@ -623,12 +626,23 @@
 
     .logoim {
         flex-direction: row;
-        justify-content: space-around;
-        display: flex;
-        margin-top: 15px;
-        margin: 10px;
+        justify-content: flex-end;
+        position: relative;
+        /*justify-content: flex-end; !* להצמיד את כל האלמנטים להתחלה *!*/
+
+        /*display: flex;*/
+        /*margin-top: 10px;*/
+        /*margin: 10px;*/
+
+
 
     }
+
+    /*.logoim {*/
+    /*    display: flex;*/
+    /*    gap: 20px; !* ריווח בין האייקונים *!*/
+    /*    align-items: center;*/
+    /*}*/
 
 
 
@@ -642,29 +656,58 @@
     /*}*/
 
 
-    /*#whatsapp-2 {*/
-    /*    width: 55px;*/
-    /*    height: 60px;*/
-    /*    right: 125px;*/
-
-
-    /*    margin-top: 10px; !* מרווח בין האייקונים *!*/
-    /*}*/
-
 
     #instagram-2 {
-        width: 20vw;
-        height: 20vh;
-        right: 37vw;
-    }
+        width: 50px;
+        height: 35px;
+        left: -70px;
 
+        top: 30px;
+
+
+        display: flex;
+
+        /*right: 50px;*/
+
+        /*right: 20vw;*/
+
+
+
+        /*left: 30px;*/
+
+        /*right: 100vw;*/
+        /*top: -100px;*/
+        /*margin-top: 10px; !* מרווח בין האייקונים *!*/
+
+    }
 
     #whatsapp-2 {
-        width: 15vw;
-        height: 20vh;
-        right: 35vw;
-        margin-top: 10px; /* מרווח בין האייקונים */
+        width: 50px;
+        height: 35px;
+        /*top: 30px;*/
+        display: flex;
+        right: 110px;
+
+
+        top: -5px;
+
+
+
+        /*margin-top: 10px; !* מרווח בין האייקונים *!*/
     }
+
+
+
+
+
+    /*#whatsapp-2 {*/
+    /*    !*width: 10vw;*!*/
+    /*    !*height: 5vh;*!*/
+    /*    !*right: 30px;*!*/
+    /*    !*margin-top: 10px; !* מרווח בין האייקונים *!*!*/
+    /*    !*display: flex;*!*/
+
+    /*}*/
 
 
     .map-container {

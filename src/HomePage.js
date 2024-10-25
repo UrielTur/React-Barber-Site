@@ -134,8 +134,8 @@ class HomePage extends React.Component {
                     </div>
 
                     <div className={"logoim"}>
-                        <a href="https://wa.me/972527455035" id={"whatsapp-2"} target={"_blank"} rel={"noopener noreferrer"}></a>
                         <a href="https://www.instagram.com/avizaurov_barbershop?igsh=cnRhM3Rub3pxamli" id={"instagram-2"} target={"_blank"} rel={"noopener noreferrer"}></a>
+                        <a href="https://wa.me/972527455035" id={"whatsapp-2"} target={"_blank"} rel={"noopener noreferrer"}></a>
                     </div>
                     <div className={"map-container"}>
                         <iframe id={"map"}

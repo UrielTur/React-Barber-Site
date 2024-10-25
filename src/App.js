@@ -3,7 +3,6 @@ import React from 'react';
 import {BrowserRouter, Routes, Route, NavLink} from "react-router-dom";
 import HomePage from "./HomePage";
 import HairProducts from "./HairProducts";
-import NotFoundPage from "./NotFoundPage";
 
 
 class App extends React.Component {
