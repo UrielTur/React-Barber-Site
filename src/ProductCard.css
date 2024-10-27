@@ -1,26 +1,24 @@
 .products-list {
     background-color: #eff0f5;
     display: flex;
-    flex-wrap: wrap; /* מאפשר ל-Flexbox לשבור שורות */
-    gap: 20px; /* רווח בין הכרטיסים */
+    flex-wrap: wrap;
+    gap: 20px;
     margin-left: 20px;
-    margin-right: 20px; /* רווח בצד ימין */
-    /*min-height: 600px; !* הוספת גובה מינימלי *!*/
-
+    margin-right: 20px;
 }
 
 .product-card {
-    flex: 1 1 calc(25% - 20px); /* כל כרטיס יתפוס 25% מהרוחב ויישאר מקום לרווחים */
+    flex: 1 1 calc(25% - 20px);
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     min-width: 250px;
-    max-width: 250px; /* הגדר גודל קבוע לכל כרטיס */
+    max-width: 250px;
     min-height: 250px;
     text-align: center;
     position: relative;
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* רקע בהיר */
+    background-color: #f8f9fa;
     margin-left: 50px;
 }
 
@@ -38,7 +36,7 @@
 .product-image {
     width: 250px;
     height: 225px;
-    object-fit: contain; /* מתאים את התמונה לגבולות הכרטיס */
+    object-fit: contain;
     margin: 0 auto 10px;
 }
 
@@ -47,15 +45,9 @@
 }
 
 .product-name {
-    font-size: 16px; /* גודל טקסט קטן יותר */
+    font-size: 16px;
     margin-bottom: 5px;
 }
-
-/*.product-desc {*/
-/*    font-size: 14px;*/
-/*    color: #777;*/
-/*    display: none; !* הסתרה לפי העיצוב בתמונה *!*/
-/*}*/
 
 .product-price {
     margin-top: 10px;
@@ -73,34 +65,15 @@
     color: #aaa;
 }
 
-/*.add-to-cart {*/
-/*    background-color: #007bff;*/
-/*    color: white;*/
-/*    padding: 10px 15px;*/
-/*    border: none;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    margin-top: 10px;*/
-/*    width: 100%; !* מתאים לכפתור להימתח לאורך הכרטיס *!*/
-/*}*/
-
-/*.add-to-cart:hover {*/
-/*    background-color: #0056b3;*/
-/*}*/
-
-
 
 @media (max-width: 768px) {
     
     .product-card {
-        flex: 1 1 calc(50% - 20px); /* כרטיסים בחצי רוחב */
+        flex: 1 1 calc(50% - 20px);
     }
 
-
     .product-image{
-
         width: 200px;
-
     }
 }
 

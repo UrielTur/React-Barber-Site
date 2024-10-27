@@ -7,8 +7,6 @@
 
 }
 
-
-
 .logo {
     background-image: url("Images/logo-barber.png");
     position: fixed;
@@ -21,7 +19,7 @@
 
 }
 
-.gallery{
+.gallery {
     background-color: black;
     border: none;
     color: white;
@@ -32,7 +30,6 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
-
 
 }
 
@@ -60,7 +57,7 @@
     color: lightgray;
 }
 
-.products{
+.products {
     background-color: black;
     border: none;
     color: white;
@@ -86,7 +83,6 @@
     position: fixed;
     background-size: contain;
     background-repeat: no-repeat;
-
     top: 30px;
     left: 110px;
     width: 75px;
@@ -123,7 +119,7 @@
     border-color: white;
 }
 
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .bg1 {
     position: relative;
@@ -147,7 +143,7 @@
 }
 
 
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .secondScreen {
     margin-top: 5px;
@@ -232,7 +228,7 @@
 }
 
 
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .thirdScreen {
     margin-top: 5px;
@@ -255,6 +251,10 @@
 #gallery-text {
     margin-top: 50px;
 }
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .fourScreen {
     background-color: #1e1f22;
@@ -294,8 +294,6 @@
     margin-right: 110px;
     position: relative;
     color: #cdc4c4;
-    /*right: 0px;*/
-    /*top: 0px;*/
 }
 
 
@@ -306,16 +304,12 @@
     display: flex;
     background-size: contain;
     background-repeat: no-repeat;
-
     top: 20px;
-    /*right: 10px;*/
     left: 30px;
     width: 10vw;
     height: 10vh;
     cursor: pointer;
-
 }
-
 
 #whatsapp-2 {
     border: none;
@@ -324,7 +318,6 @@
     display: flex;
     background-size: contain;
     background-repeat: no-repeat;
-
     top: -50px;
     right: 40px;
     width: 10vw;
@@ -333,46 +326,37 @@
 
 }
 
-
-
 .map-container{
     margin-left: 100px;
     margin-top: 20px;
 }
 
-
-/* CSS למכשירי מובייל */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* למכשירי סמארטפון */
 @media (max-width: 768px) {
 
     * {
         box-sizing: border-box;
     }
+
     body {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
     }
 
-
     body {
         overflow-x: hidden;
     }
 
 
-
     .panel {
         width: 100%;
-        height: 12%; /* להקטין את הפאנל הראשי */
+        height: 12%;
         position: fixed;
         background-color: black;
-        max-width: 100%; /* מניעת גלישה מחוץ למסך */
-        flex-direction: row; /* בשורה אחת */
-
-
-        /*flex-wrap: wrap; !* מאפשר ירידה לשורה חדשה במקרה הצורך *!*/
-
-
-
+        max-width: 100%;
+        flex-direction: row;
         display: flex;
 
     }
@@ -381,21 +365,19 @@
     .logo {
         width: 17%;
         height: 25%;
-        left: 80%; /* לקרב את הלוגו */
+        left: 80%;
         top: 2%;
     }
 
     .gallery {
         border: none;
         width: 5%;
-        height: 5%; /* להקטין כפתורים */
+        height: 5%;
         left: 65%;
     }
 
     .contact{
         display: none;
-
-
     }
 
     .products{
@@ -409,15 +391,13 @@
 
     h2 {
       font: bold 14px Arial;
-
-
     }
 
     .instagram{
         width: 50px;
         height: 35px;
         top: 30px;
-        left: 50px; /* התאמת גודל האייקונים */
+        left: 50px;
 
     }
 
@@ -425,24 +405,25 @@
         width: 50px;
         height: 35px;
         top: 30px;
-        left: 50px; /* התאמת גודל האייקונים */
+        left: 50px;
     }
 
     .whatsapp {
         width: 35px;
         height: 40px;
         top: 30px;
-        left: 10px; /* התאמת גודל האייקונים */
-
+        left: 10px;
     }
 
     .whatsapp:hover {
         width: 35px;
         height: 40px;
         top: 30px;
-        left: 10px; /* התאמת גודל האייקונים */
-
+        left: 10px;
     }
+
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
     .bg1 {
         position: relative;
@@ -459,19 +440,18 @@
         overflow-x: hidden;
         width: 100vw;
         height: 100vh;
-        object-fit: cover; /* חשוב - יכסה את כל המסך */
+        object-fit: cover;
         z-index: -1;
     }
 
 
     #firstButton {
-        /*font: bold 16px Arial;*/
         opacity: 0.75;
         width: 150px;
         height: 50px;
         background-color: black;
         color: white;
-        padding: 50px 90px; /* הפחתת padding כדי להשאיר מקום לטקסט */
+        padding: 50px 90px;
         border-color: rgba(255, 255, 255, 0.87);
         border-radius: 5px;
         text-align: center;
@@ -489,6 +469,8 @@
     }
 
 
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
     .secondScreen {
         width: 100vw;
         height: 80vh;
@@ -505,18 +487,16 @@
 
     }
 
-
     .images-row {
-        flex-direction: column; /* שינוי הפריסה לטור במובייל */
+        flex-direction: column;
     }
 
     .avi-1 {
-        /*top: 30px;*/
         display: flex;
         width: 90%;
-        height: 70%; /* התאמת התמונות */
-        animation: changeBackground 25s infinite; /* מחזור של 30 שניות */
-        transition: background-image 0s, filter 0.1s ease-in-out; /* טשטוש במעבר בלבד */
+        height: 70%;
+        animation: changeBackground 25s infinite;
+        transition: background-image 0s, filter 0.1s ease-in-out;
         margin-top: 10px;
     }
 
@@ -549,13 +529,12 @@
         }
     }
 
-
     .avi-2 , .avi-3{
         display: none;
     }
 
 
-
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
     .thirdScreen {
         width: 100vw;
@@ -569,58 +548,41 @@
 
     }
 
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
     .fourScreen {
         width: 100vw;
         height: 15vh;
-        /*height: auto; !* לאפשר גובה דינאמי בהתאם לתוכן *!*/
         padding: 10px;
         display: flex;
-        align-items: flex-start; /* התיישרות למעלה */
-        /*flex-direction: row; !* בשורה אחת *!*/
-
-        /*flex-direction: column; !* וודא שכולם יוצגו בטור *!*/
-        justify-content: flex-start; /* להצמיד את כל האלמנטים להתחלה */
-        /*flex-wrap: wrap;*/
+        align-items: flex-start;
+        justify-content: flex-start;
         max-width: 100%;
         text-align: left;
     }
 
     .logo-1 {
-
-        width: 40vw; /* להקטין לגודל מותאם מובייל */
+        width: 40vw;
         height: 12vh;
-        /*padding-right: 30vw;*/
-        /*align-items: flex-start; !* התיישרות למעלה *!*/
-
         position: relative;
-
-        margin-left: 0; /* לבטל הזחה מיותרת */
+        margin-left: 0;
         right: 10vw;
-        /*margin-bottom: 10px; !* להוסיף קצת מרווח למטה *!*/
     }
 
     #text-1 {
         position: relative;
-        /*margin: 5px 0; !* מרווח בין השורות *!*/
-
-
         white-space: nowrap;
-        font-size: 13px; /* להקטין את הגופן במובייל */
+        font-size: 13px;
         margin-left: 0;
-        /*position: relative;*/
         top: 3vh;
         right: 10vw;
     }
 
     #text-2 {
-
         position: relative;
-
         white-space: nowrap;
-        font-size: 13px; /* להקטין את הגופן במובייל */
-        /*position: relative;*/
+        font-size: 13px;
         top: 4vh;
         right: 11vw;
     }
@@ -629,67 +591,28 @@
         flex-direction: row;
         justify-content: flex-end;
         position: relative;
-        /*justify-content: flex-end; !* להצמיד את כל האלמנטים להתחלה *!*/
-
-        /*display: flex;*/
-        /*margin-top: 10px;*/
-        /*margin: 10px;*/
-
-
-
     }
-
-
 
     #instagram-2 {
         width: 50px;
         height: 35px;
         left: -70px;
-
         top: 30px;
-
-
         display: flex;
-
     }
+
 
     #whatsapp-2 {
         width: 50px;
         height: 35px;
-        /*top: 30px;*/
         display: flex;
         right: 110px;
-
-
         top: -5px;
-
-
-
-        /*margin-top: 10px; !* מרווח בין האייקונים *!*/
     }
-
-
-
-
-
-    /*#whatsapp-2 {*/
-    /*    !*width: 10vw;*!*/
-    /*    !*height: 5vh;*!*/
-    /*    !*right: 30px;*!*/
-    /*    !*margin-top: 10px; !* מרווח בין האייקונים *!*!*/
-    /*    !*display: flex;*!*/
-
-    /*}*/
-
 
     .map-container {
         display: none;
     }
-
-
-
-
-
 
 
 }

@@ -14,54 +14,43 @@
     height: 550px;
     overflow: hidden;
     border-radius: 10px;
-    background-size: cover; /* להתאים את התמונה לגודל של הקונטיינר */
-    /*background-position: center; !* למרכז את התמונה *!*/
+    background-size: cover;
 }
 
 .image-1 {
     background-image: url("Images/haircut-1.jpeg");
     background-position: center;
-
 }
 
 .image-2 {
     background-image: url("Images/haircut-2.jpeg");
-
-
 }
 
 .image-3 {
     background-image: url("Images/haircut-3.jpeg");
-    /*background-position: right; !* למרכז את התמונה *!*/
-    background-size: contain; /* להתאים את התמונה לגודל של הקונטיינר */
+    background-size: contain;
     background-repeat: no-repeat;
     margin-left: 80px;
-
-
 }
 
 .image-4 {
     background-image: url("Images/haircut-4.jpeg");
     background-position: center;
-
 }
 
 .image-5 {
     background-image: url("Images/haircut-5.jpeg");
     background-position: center;
-
 }
 
 .image-6 {
     background-image: url("Images/haircut-6.jpeg");
     background-position: center;
-
 }
 
 .image-7 {
     background-image: url("Images/haircut-7.jpeg");
     background-position: center;
-
 }
 
 .prev-button, .next-button {

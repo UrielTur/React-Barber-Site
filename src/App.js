@@ -3,6 +3,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route, NavLink} from "react-router-dom";
 import HomePage from "./HomePage";
 import HairProducts from "./HairProducts";
+// import logo from '.Images/logo-barber.png';
 
 
 class App extends React.Component {
@@ -17,21 +18,18 @@ class App extends React.Component {
     return (
 
       <div className="App">
-          {/*<a href={"/products"}> Go to products page </a>*/}
-          <BrowserRouter>
-              {/*<NavLink style={navLinkStile} to={"/home"}>Home</NavLink>*/}
-              {/*<NavLink to={"/"} ></NavLink>*/}
+          {/*<header className="App-header">*/}
+              {/*<img src={"Images/logo-barber.png"} className="App-logo" alt="logo" /> /!* הצגת הלוגו *!/*/}
+              <BrowserRouter>
               <NavLink to={"/products"} ></NavLink>
-
-
 
               <Routes>
                     <Route path={"/"}  element={<HomePage />}/>
                     <Route path={"/products"}  element={<HairProducts />}/>
-                    {/*<Route path={"*"}  element={<NotFoundPage />}/>*/}
 
               </Routes>
-          </BrowserRouter>
+            </BrowserRouter>
+          {/*</header>*/}
 
       </div>
     );

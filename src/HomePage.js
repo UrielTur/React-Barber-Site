@@ -17,7 +17,6 @@ function withNavigation(Component) {
 }
 
 
-
 class HomePage extends React.Component {
 
     constructor(props) {

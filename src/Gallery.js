@@ -48,6 +48,10 @@ const Gallery = () => {
         });
     };
 
+
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
     return (
         <div className="carousel-container">
             <button className="prev-button" onClick={prevImage}>

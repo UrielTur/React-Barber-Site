@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import ProductCard from './ProductCard';  // החיבור לקומפוננטת כרטיס המוצר
 import textureVolumeImage from './Images/texture-volume-1.jpeg';
 import waxNishMan from './Images/wax-nish-man.jpg';
@@ -23,10 +22,7 @@ function withNavigation(Component) {
 }
 
 
-
 class HairProducts extends React.Component {
-
-
 
     constructor(props) {
         super(props);
@@ -38,7 +34,6 @@ class HairProducts extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0); // גולל אוטומטית לראש העמוד כאשר דף ה-products נטען
     }
-
 
 
     getProductsList = () => {
