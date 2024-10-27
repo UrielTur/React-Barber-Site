@@ -495,10 +495,11 @@
     }
 
     .secondScreen h1 {
-        font: bold 22px Arial;
+        font: bold 23px Arial;
         width: 50%;
         white-space: nowrap;
         text-align: center;
+        align-items: center;
         margin-left: 20%;
         margin-top: 10%;
 
@@ -572,7 +573,7 @@
 
     .fourScreen {
         width: 100vw;
-        height: 45vh;
+        height: 15vh;
         /*height: auto; !* לאפשר גובה דינאמי בהתאם לתוכן *!*/
         padding: 10px;
         display: flex;
@@ -637,23 +638,6 @@
 
 
     }
-
-    /*.logoim {*/
-    /*    display: flex;*/
-    /*    gap: 20px; !* ריווח בין האייקונים *!*/
-    /*    align-items: center;*/
-    /*}*/
-
-
-
-    /*#instagram-2 {*/
-    /*    width: 75px;*/
-    /*    height: 80px;*/
-    /*    right: 125px;*/
-
-
-    /*    !*margin-top: 10px; !* מרווח בין האייקונים *!*!*/
-    /*}*/
 
 
 
